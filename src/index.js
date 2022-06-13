@@ -116,3 +116,26 @@ console.log(nums2(20, 20));
 
 const num3 = (num5, num6) => num5 + num6;
 console.log(num3(20, 49));
+
+/**
+ * 分割代入
+ */
+
+// const myprofile = {
+//   nameProf: "ぺ",
+//   ageProf: 37
+// };
+// const messageMyProf01 = `私の名前は${myprofile.nameProf}です。年齢は${myprofile.ageProf}です。`;
+// console.log(messageMyProf01);
+
+// const { nameProf, ageProf } = myprofile;
+// const messageMyProf02 = `私の名前は${nameProf}です。年齢は${ageProf}です。`;
+// console.log(messageMyProf02);
+
+const myProfile = ["ぺ", 37, "男"];
+const messageMyprofile = `私は${myProfile[0]}です。${myProfile[1]}歳の${myProfile[2]}性です。`;
+console.log(messageMyprofile);
+
+const [namepro, agepro, sexpro] = myProfile;
+const messageMyprofile02 = `私は${namepro}です。${agepro}歳の${sexpro}性です。`;
+console.log(messageMyprofile02);
