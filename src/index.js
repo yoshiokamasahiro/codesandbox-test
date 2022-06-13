@@ -68,3 +68,44 @@ console.log(message1);
 //`(バッククォート)=>shift + @
 const message2 = `私の名前は${name}です。${age}歳です。`;
 console.log(message2);
+
+//従来の関数
+function func1(str) {
+  return str;
+}
+console.log(func1("func1です"));
+
+function funcw(str2) {
+  return str2;
+}
+console.log(funcw("func2です"));
+
+function fuku(sttr) {
+  return sttr;
+}
+console.log(fuku("sttrですよ"));
+
+const funcs = function (ppp) {
+  return ppp;
+};
+console.log(funcs("ゾゾゾ"));
+
+//アロー関数
+const funcs2 = (Sppp) => {
+  return Sppp;
+};
+console.log(funcs2("funcs2です"));
+//単一処理の場合、returnを省略できる
+const plan = (eps) => eps;
+console.log(plan("プランです"));
+
+const names = ["cat", "dog"];
+console.log(names);
+
+const nums = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(nums(10, 20));
+
+const nums2 = (num3, num4) => num3 + num4;
+console.log(nums2(20, 20));
