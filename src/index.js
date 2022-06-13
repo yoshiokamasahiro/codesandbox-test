@@ -56,66 +56,66 @@
 /**
  * テンプレート文字列
  */
-const name = "ぺえ";
-const age = 37;
-//私はぺえです。37歳です。
+// const name = "ぺえ";
+// const age = 37;
+// //私はぺえです。37歳です。
 
-//従来の方法
-const message1 = "私は" + name + "です。" + age + "歳です。";
-console.log(message1);
+// //従来の方法
+// const message1 = "私は" + name + "です。" + age + "歳です。";
+// console.log(message1);
 
-//テンプレート文字列を用いた方法
-//`(バッククォート)=>shift + @
-const message2 = `私の名前は${name}です。${age}歳です。`;
-console.log(message2);
+// //テンプレート文字列を用いた方法
+// //`(バッククォート)=>shift + @
+// const message2 = `私の名前は${name}です。${age}歳です。`;
+// console.log(message2);
 
-//従来の関数
-function func1(str) {
-  return str;
-}
-console.log(func1("func1です"));
+// //従来の関数
+// function func1(str) {
+//   return str;
+// }
+// console.log(func1("func1です"));
 
-function funcw(str2) {
-  return str2;
-}
-console.log(funcw("func2です"));
+// function funcw(str2) {
+//   return str2;
+// }
+// console.log(funcw("func2です"));
 
-function fuku(sttr) {
-  return sttr;
-}
-console.log(fuku("sttrですよ"));
+// function fuku(sttr) {
+//   return sttr;
+// }
+// console.log(fuku("sttrですよ"));
 
-const funcs = function (ppp) {
-  return ppp;
-};
-console.log(funcs("ゾゾゾ"));
-
-//アロー関数
-const funcs2 = (Sppp) => {
-  return Sppp;
-};
-console.log(funcs2("funcs2です"));
-//単一処理の場合、returnを省略できる
-const plan = (eps) => eps;
-console.log(plan("プランです"));
-
-const names = ["cat", "dog"];
-console.log(names);
-
-const nums = (num1, num2) => {
-  return num1 + num2;
-};
-console.log(nums(10, 20));
-
-const nums2 = (num3, num4) => num3 + num4;
-console.log(nums2(20, 20));
-
-// const num3 = (num5, num6) => {
-//   return num5 + num6;
+// const funcs = function (ppp) {
+//   return ppp;
 // };
+// console.log(funcs("ゾゾゾ"));
 
-const num3 = (num5, num6) => num5 + num6;
-console.log(num3(20, 49));
+// //アロー関数
+// const funcs2 = (Sppp) => {
+//   return Sppp;
+// };
+// console.log(funcs2("funcs2です"));
+// //単一処理の場合、returnを省略できる
+// const plan = (eps) => eps;
+// console.log(plan("プランです"));
+
+// const names = ["cat", "dog"];
+// console.log(names);
+
+// const nums = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(nums(10, 20));
+
+// const nums2 = (num3, num4) => num3 + num4;
+// console.log(nums2(20, 20));
+
+// // const num3 = (num5, num6) => {
+// //   return num5 + num6;
+// // };
+
+// const num3 = (num5, num6) => num5 + num6;
+// console.log(num3(20, 49));
 
 /**
  * 分割代入
@@ -132,10 +132,19 @@ console.log(num3(20, 49));
 // const messageMyProf02 = `私の名前は${nameProf}です。年齢は${ageProf}です。`;
 // console.log(messageMyProf02);
 
-const myProfile = ["ぺ", 37, "男"];
-const messageMyprofile = `私は${myProfile[0]}です。${myProfile[1]}歳の${myProfile[2]}性です。`;
-console.log(messageMyprofile);
+// const myProfile = ["ぺ", 37, "男"];
+// const messageMyprofile = `私は${myProfile[0]}です。${myProfile[1]}歳の${myProfile[2]}性です。`;
+// console.log(messageMyprofile);
 
-const [namepro, agepro, sexpro] = myProfile;
-const messageMyprofile02 = `私は${namepro}です。${agepro}歳の${sexpro}性です。`;
-console.log(messageMyprofile02);
+// const [namepro, agepro, sexpro] = myProfile;
+// const messageMyprofile02 = `私は${namepro}です。${agepro}歳の${sexpro}性です。`;
+// console.log(messageMyprofile02);
+
+// const sayHello = (name) => console.log(`こんにちは、${name}さん。`);
+// sayHello("ぺえ");
+
+// const sayHello = (name) => console.log(`こんにちは${(name, "ぺり")}さん!`);
+// sayHello();
+
+// const sayHello = (name = "ひま") => console.log(`こんにちは、${name}さん`);
+// sayHello("");
