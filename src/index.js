@@ -109,3 +109,10 @@ console.log(nums(10, 20));
 
 const nums2 = (num3, num4) => num3 + num4;
 console.log(nums2(20, 20));
+
+// const num3 = (num5, num6) => {
+//   return num5 + num6;
+// };
+
+const num3 = (num5, num6) => num5 + num6;
+console.log(num3(20, 49));
