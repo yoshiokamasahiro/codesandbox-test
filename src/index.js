@@ -148,3 +148,113 @@
 
 // const sayHello = (name = "ひま") => console.log(`こんにちは、${name}さん`);
 // sayHello("");
+
+// const myProf = ["ぺ", 12];
+// const message12 = `私は${myProf[0]}です。在籍${myProf[1]}年です。`;
+// console.log(message12);
+
+// const [name, worksAge] = myProf;
+// const message14 = `私は${name}です。在籍${worksAge}年です。`;
+// console.log(message14);
+
+/**
+ * デフォルト値、引数など
+ */
+// const sayHello = (name = "ぼんた") => console.log(`こんにちは${name}さん`);
+// sayHello();
+
+/**
+ * スプレット 構文 ... =>順番に処理
+ * 元の参照を引き継ぐ
+ */
+/**
+ * 配列の展開
+ */
+// const arr1 = [1, 2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// // console.log(arr1[0] + arr1[1]);
+// // console.log(...arr1);
+
+// const sumFunc = (num1,num2) => console.log(num1 + num2);
+// sumFunc(arr1[0],arr1[1]);
+// sumFunc(...arr1);
+/**
+ * まとめる
+ */
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+//配列のコピー
+
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4];
+// //console.log(arr6);
+// // const arr8 = (arr4, arr5) => console.log(arr4 + arr5);
+// // arr8(...arr5);
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
+
+// const arr8 = [...arr4];
+// arr8[0] = 200;
+// console.log(arr8);
+// console.log(arr4);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+const nameArr = ["鶴", "亀", "猫"];
+// for(let index = 0; index < nameArr.length; index++){
+//   console.log(`${index}番目は、${nameArr[index]}です。`);
+// }
+// for(let index = 0; index < nameArr.length; index++){
+//   console.log(nameArr[index]);
+// };
+//map
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+//nameArr.map((name) => console.log(name));
+// nameArr.map((ppp, name) => console.log(`${name + 1}番目は${ppp}です。`));
+
+//filter
+// const numArr = [1, 2, 3, 4, 5];
+// const numArrOdd = numArr.filter((nameOdd) => {
+//   return nameOdd % 2 === 1; //奇数
+//   // return nameOdd % 2 === 0; //偶数
+// });
+// console.log(numArrOdd);
+
+//猫以外をさん付けで表示
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "猫") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+//ある条件 ? 条件がtrueの時 : 条件がfalseの時 ;
+// const val1 = 1 < 0 ? "trueです" : "falseです";
+// console.log(val1);
+
+// const num = "1300";
+// const formattNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値を入力してください。";
+// console.log(formattNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100より大きいです" : "許容範囲です";
+};
+console.log(checkSum(71, 30));
