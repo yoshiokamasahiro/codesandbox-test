@@ -254,7 +254,32 @@ const nameArr = ["鶴", "亀", "猫"];
 //   typeof num === "number" ? num.toLocaleString() : "数値を入力してください。";
 // console.log(formattNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100より大きいです" : "許容範囲です";
-};
-console.log(checkSum(71, 30));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100より大きいです" : "許容範囲です";
+// };
+// console.log(checkSum(71, 30));
+
+/**
+ * 論理演算子の本当の意味を知ろう || &&
+ */
+const flag1 = true;
+const flag2 = false;
+
+if (flag1 || flag2) {
+  //または
+  console.log("1か2はtrueになります。");
+}
+if (flag1 && flag2) {
+  //かつ
+  console.log("1も2もtrueになります。");
+}
+
+// ||は左が側falseだったら右側を返す
+const num = 200;
+const fee = num || "金額未設定です。";
+console.log(fee);
+
+// && は左側がtrueなら右側を返す
+const num2 = 100;
+const fee2 = num2 && "何か設定されました。";
+console.log(fee2);
