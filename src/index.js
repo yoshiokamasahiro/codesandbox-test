@@ -281,5 +281,5 @@ console.log(fee);
 
 // && は左側がtrueなら右側を返す
 const num2 = 100;
-const fee2 = num2 && "何か設定されました。";
-console.log(fee2);
+const fee23 = num2 && "何か設定されました。";
+console.log(fee23);
